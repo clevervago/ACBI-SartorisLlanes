@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Computer Force</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+    /* Style for product categories */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product-category {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 10px;
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    .product-category h2 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .product-category img {
+      max-width: 100%;
+      max-height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="./images/computerforce-logo.png" alt="Computer Force logo"></a>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </nav>
+  
+  <main>
+    <h1>Products we sell</h1>
+    <p>Computer Force sells products in the following categories:</p>
+    
+    <div class="product-category">
+      <h2>Audio</h2>
+      <a href="#audio"><img src="./images/audio-product.jpg" alt="Audio product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Computers</h2>
+      <a href="#computers"><img src="./images/computer.jpg" alt="Computers product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Graphics cards</h2>
+      <a href="#graphics-cards"><img src="./images/graphics-cards-product.jpg" alt="Graphics cards product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Keyboard and mice</h2>
+      <a href="#keyboard-mice"><img src="./images/keyboard-mice-product.jpg" alt="Keyboard and mice product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Laptops</h2>
+      <a href="#laptops"><img src="./images/laptop.jpg" alt="Laptops product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Monitors</h2>
+      <a href="#monitors"><img src="./images/monitor.jpg" alt="Monitors product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Networking</h2>
+      <a href="#networking"><img src="./images/networking-product.jpg" alt="Networking product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Peripherals</h2>
+      <a href="#peripherals"><img src="./images/peripherals-product.jpg" alt="Peripherals product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Printing & scanning</h2>
+      <a href="#printing-scanning"><img src="./images/printer.jpg" alt="Printing & scanning product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Software</h2>
+      <a href="#software"><img src="./images/software.jpg" alt="Software product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Storage</h2>
+      <a href="#storage"><img src="./images/storage-product.jpg" alt="Storage product"></a>
+    </div>
+
+    <div class="product-category">
+      <h2>Tablets</h2>
+      <a href="#tablets"><img src="./images/tablet.jpg" alt="Tablets product"></a>
+    </div>
+  </main>
+  
+  <aside>
+    <h2>Purchases</h2>
+    <table>
+      <tbody>
+        <tr>
+        <th>Item</th>
+        <th>Price(AUD)</th>
+        </tr>
+        <tr>
+          <td>Test Item 1</td>
+          <td>$1000</td>
+        </tr>
+        <tr>
+          <td>Test Item 2</td>
+          <td>$500</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$1500</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="checkout.html" class="checkout-btn">Go to Checkout</a>
+  </aside>
+  
+  <footer>
+    <p>&copy;2023 Computer Force. All rights reserved. Octavio Sartoris Llanes</p>
+  </footer>
+</body>
+</html>

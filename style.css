@@ -1,0 +1,224 @@
+/* Overall layout */
+body {
+  font-family: Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Ensure relative positioning for child elements */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  height: 80px;
+  width: auto;
+}
+
+/* Navigation */
+nav {
+  background-color: #4d4d4d;
+  display: flex;
+  justify-content: center; /* Center-align horizontally */
+  align-items: center; /* Center-align vertically */
+  padding: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px; /* Add horizontal spacing between links */
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #999;
+}
+
+/* Search */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.search button {
+  padding: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 50px;
+  margin-bottom: 300px;
+  min-height: calc(100vh - 350px); /* Ensure enough height for main content */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-category {
+  width: calc(25% - 20px); /* 25% width to display 4 categories per row with spacing */
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.product {
+  margin: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+}
+
+.product img {
+  height: 100px;
+  max-width: 50%;
+}
+
+.product h2 {
+  margin-top: 0;
+}
+/* Specific styles for about.html */
+body.about {
+  /* Add styles here for the body element of about.html */
+}
+
+main.about {
+  text-align: center; /* Center-align text within the main content of about.html */
+}
+
+/* Center-align the list items within <ul> on about.html */
+main.about ul {
+  text-align: left; /* Reset text alignment for list items */
+  margin-left: 20px; /* Add left margin to list items for better readability */
+}
+
+/* Style for the list items within <ul> on about.html */
+main.about ul li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+/* Aside */
+aside {
+  border: none !important;
+}
+/* Remove borders from the table inside the aside element */
+aside table, aside table td, aside table th {
+  border: none;
+}
+
+/* Other styles for aside */
+aside {
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  width: 250px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  z-index: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: auto;
+}
+
+/* "Go to Checkout" button */
+.checkout-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+}
+
+.checkout-btn:hover {
+  background-color: #666;
+}
+
+/* Table styles */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.total {
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
